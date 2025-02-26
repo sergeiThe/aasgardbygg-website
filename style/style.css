@@ -1,0 +1,50 @@
+header {
+    background-color: gray;
+}
+
+.header--inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header--nav {
+    display: flex;
+    align-items: center;
+}
+
+.header--nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header--nav ul a {
+    color: #f6f6d7;
+}
+
+.header--nav ul a:hover {
+    color: yellow;
+}
+
+.container {
+  padding: 0 50px;
+}
+
+.container--inner {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+
+.hero-section {
+    height: 80vh;
+    background-image: url("./../img/hero-bg.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background-blend-mode: darken;
+}
