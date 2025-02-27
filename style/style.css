@@ -172,24 +172,6 @@ header {
 
 
 
-.review-section--inner {
-   display: flex;
-   flex-direction: column;
-   align-content: center;
-   text-align: center;
-}
-
-.reviews-box {
-    display: flex;
-    gap: 20px;
-}
-
-.reviews-box--card {
-    background-color: yellow;
-     padding: 20px;
-     border-radius: 20px;
-     width: 300px;
-}
 
 .contact-section {
     background-color: gray;
