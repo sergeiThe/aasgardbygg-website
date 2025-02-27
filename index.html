@@ -46,9 +46,9 @@
         </div>
         <nav class="header--nav">
           <ul>
-            <li><a href="#">Anmeldelser</a></li>
-            <li><a href="#">Tjenester</a></li>
-            <li><a href="#">Bestill befaring</a></li>
+            <li><a href="#reviews">Anmeldelser</a></li>
+            <li><a href="#services">Tjenester</a></li>
+            <li><a href="#contact">Bestill befaring</a></li>
           </ul>
         </nav>
       </div>
@@ -152,7 +152,7 @@
       <div class="spacer"></div>
 
       <!-- Services -->
-      <section class="service-section container">
+      <section id="services" class="service-section container">
         <div class="container--inner service-section--inner">
           <h2>Vi er et byggefirma som tar det meste innen bygg og anlegg</h2>
 
@@ -164,7 +164,7 @@
 
       <div class="spacer"></div>
       <!-- Reviews  -->
-      <section class="review-section container">
+      <section id="reviews" class="review-section container">
         <div class="container--inner review-section--inner">
           <h2 class="review-section--title">Hva våre kunder sier om oss</h2>
 
@@ -174,29 +174,41 @@
 
       <div class="spacer"></div>
       <!-- Contact -->
-      <section class="contact-section container container--inner">
-        <div class="contact-section--map">Map</div>
-        <div>
+      <section id="contact" class="contact-section container container--inner">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1790.497293769337!2d10.057905057079264!3d63.335420741960775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4612d39c5e62218f%3A0x55799592c89b5448!2sNedre%20Skoglykkja%209%2C%207353%20B%C3%B8rsa%2C%20Norway!5e0!3m2!1sen!2spt!4v1740673524536!5m2!1sen!2spt"
+            width="800"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="contact-form-section">
           <h3>Hva kan vi hjelpe deg med?</h3>
           <form class="contact-form">
             <label for="id">Fullt navn</label>
-            <input id="name" type="text" required />
+            <input class="contact-form-field" id="name" type="text" required />
 
             <label for="email">E-post</label>
-            <input id="email" type="email" required />
+            <input
+              class="contact-form-field"
+              id="email"
+              type="email"
+              required
+            />
 
             <label for="phone">Telefon nr.</label>
-            <input id="phone" type="tel" required />
-
-            <span>Hva er formålet?</span>
-            <label for="to-order">Ønsker å bestille</label>
-            <input id="to-order" type="checkbox" />
-
-            <label for="have-q">Har spørsmål</label>
-            <input id="have-q" type="checkbox" />
+            <input class="contact-form-field" id="phone" type="tel" required />
 
             <label for="message">Melding</label>
-            <textarea id="message" required></textarea>
+            <textarea
+              class="contact-form-field"
+              id="message"
+              required
+            ></textarea>
 
             <button>Send</button>
           </form>
@@ -210,7 +222,9 @@
       <div class="container--inner footer-inner">
         <div class="footer-content">
           <article>
-            <div>logo</div>
+            <div>
+              <img class="logo" src="img/logo.png" />
+            </div>
             <p>
               Aasgard Bygg er et lag av dyktige fagfolk innen bygg og anlegg som
               spesialiserer seg innen bad oppussing, tilbygg og påbygg samt
@@ -220,24 +234,38 @@
             </p>
           </article>
 
-          <article>
+          <article class="footer-contact-section">
             <h3>Kontakt</h3>
-            <div>divider</div>
-            <div>405 65 519</div>
-            <div>aasgardbygg@gmail.com</div>
-            <div>Nedre Skoglykkja 9, 7353</div>
+            <div class="divider"></div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+4740565519">405 65 519</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:aasgardbygg@gmail.com">aasgardbygg@gmail.com</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <a>Nedre Skoglykkja 9, 7353</a>
+            </div>
+            <div></div>
             <div>
               <span>FB</span>
               <span>INSTA</span>
             </div>
           </article>
 
-          <article>
+          <article class="footer-service-section">
             <h3>Tjenester</h3>
-            <div>divider</div>
+            <div class="divider"></div>
             <ul>
               <li><a>Rehabilitering/renovering</a></li>
-              <li><a>Rehabilitering/renovering</a></li>
+              <li><a>Bad</a></li>
+              <li><a>Kjøkken</a></li>
+              <li><a>Tak</a></li>
+              <li><a>Tilbygg & påbygg</a></li>
+              <li><a>Småjobber</a></li>
             </ul>
           </article>
         </div>
