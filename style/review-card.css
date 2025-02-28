@@ -47,3 +47,9 @@
 .review-icon {
   font-size: 2rem;
 }
+
+@media (max-width: 600px) {
+  .reviews-box {
+    grid-template-columns: 1fr;
+  }
+}

@@ -4,6 +4,35 @@ button {
   cursor: pointer;
   font-size: 1.2rem;
 }
+
+.bottom-bar {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+
+  z-index: 100;
+
+  display: flex;
+  justify-content: end;
+  padding: 5px 0;
+  margin-right: 20px;
+}
+.phone-btn {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 5px 25px;
+  border-radius: 50px;
+
+  gap: 10px;
+  box-shadow: 0px 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
 header {
   background-image: url("./../img/header-bg.jpg");
   background-size: cover;
@@ -18,6 +47,11 @@ header {
   z-index: 100;
   opacity: 0;
   animation: fadeIn 0.3s linear 0.5s forwards;
+}
+
+@media (max-width: 600px) {
+  header {
+  }
 }
 
 @keyframes fadeIn {
@@ -115,6 +149,12 @@ header {
   object-position: center;
 }
 
+@media (max-width: 600px) {
+  .hero-section--drawer img {
+    width: 80px;
+    height: 150px;
+  }
+}
 .about-section .container--inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -139,9 +179,18 @@ header {
   flex-direction: column;
   gap: 20px;
 }
+@media (max-width: 600px) {
+  .about-section .container--inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 300px;
+    gap: 50px;
+  }
+}
 
 .icon-box-section {
   display: flex;
+  flex-direction: row;
   gap: 30px;
   justify-content: space-between;
 
@@ -166,6 +215,12 @@ header {
   font-size: 1.5rem;
 }
 
+@media (max-width: 600px) {
+  .icon-box-section {
+    flex-direction: column;
+  }
+}
+
 .service-section--inner {
   display: flex;
   flex-direction: column;
@@ -178,6 +233,12 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
 
   gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contact-section {
@@ -221,6 +282,13 @@ header {
   font-family: "Roboto", sans-serif;
   outline: none;
   margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
 }
 
 textarea {
@@ -267,4 +335,12 @@ footer .logo {
   border-top: 1px solid white;
   padding-top: 10px;
   margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
